@@ -15,7 +15,7 @@ public class ValidacaoBureauSender {
 
     public void send() {
         String message = "Hello World!";
-        this.template.convertAndSend(queue.getName(), message);
+        this.template.convertAndSend(queue.toString(), message);
         System.out.println(" [x] Sent '" + message + "'");
     }
 

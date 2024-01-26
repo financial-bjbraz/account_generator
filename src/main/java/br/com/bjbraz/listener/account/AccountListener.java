@@ -6,7 +6,7 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-@RabbitListener(queues = "hello")
+@RabbitListener(queues = "accounts-created")
 public class AccountListener {
 
     static final String queueName = "spring-boot";
